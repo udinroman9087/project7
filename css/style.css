@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border: 1px solid rgb(255, 255, 255);
+  width: 60%;
+  margin: 0 auto;
+}
+header h1 {
+  font-family: "Helvetica Neue Pro - Lt";
+  font-size: 44px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1d1e1f;
+  text-align: center;
+  margin-top: 206px;
+}
+header h3 {
+  font-family: Merriweather;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.03em;
+  color: #898888;
+}
+header .button {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Montserrat-Regular;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: #000000;
+  margin: 0 auto;
+  width: 188px;
+  height: 57px;
+  border: 1px solid #000000;
+  margin-top: 44px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+header .button:hover {
+  color: #fff;
+  background-color: #000;
+}
+header nav ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+header nav ul a {
+  text-decoration: none;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: #989696;
+}
+header nav ul a:hover {
+  color: #010101;
+}
+header nav ul li.active a {
+  color: #010101;
+}
+
+main .about {
+  background-color: #6f6e6e;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 178px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 276px 178px 276px;
+  grid-template-rows: 276px 276px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 178px;
+  padding: 10vh 0;
+  background: url(../img/buildings__black.png) center bottom repeat-x, url(../img/buildings__white_3165.png) center bottom repeat-x, #1d1d1d;
+}
+
+main .about > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+main .about > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+main .about > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+main .about > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+main .about .about__item {
+  background-color: #181818;
+  width: 417px;
+  height: 276px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  padding: 0 1vw;
+}
+main .about .about__item .about__text {
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  color: #b7b7b7;
+}
+main .about .about__item .about__text .about__year {
+  font-family: "Helvetica Neue Pro";
+  font-size: 48px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #fefefe;
+}
+.team {
+  text-align: center;
+  margin-top: 10%;
+  padding-left: 8vw;
+  padding-right: 8vw; }
+  .team h2 {
+    font-family: HelveticaNeueLTProLt;
+    font-size: 2.2vw;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #1d1e1f; }
+  .team h3 {
+    font-family: Merriweather-LightItalic;
+    font-size: 1vw;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #898888; }
+  .team .cart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-top: 12%; }
+    .team .cart .cart__team .image__cart img {
+      width: 43%;
+      height: 24vh;
+      border-radius: 500px;
+      margin-bottom: 2vh; }
+    .team .cart .cart__team .text__cart h4 {
+      font-family: HelveticaNeueLTProRoman;
+      font-size: 1.6vw;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: #464646; }
+    .team .cart .cart__team .text__cart h5 {
+      font-family: HelveticaNeueLTProLt;
+      font-size: 0.9vw;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: #b3b3b3; }
+    .team .cart .cart__team .social__team {
+      margin-top: 1vh; }
+      .team .cart .cart__team .social__team i {
+        font-size: 1.4vw;
+        cursor: pointer;
+        transition: 0.5s; }
+        .team .cart .cart__team .social__team i:hover {
+          color: #1D1D1D;
+          transition: 0.5s; }
